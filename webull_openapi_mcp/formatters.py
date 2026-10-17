@@ -55,6 +55,13 @@ _DISCLAIMER_SG = (
     "Trading involves risk; please make decisions carefully.\n\n"
 )
 
+_DISCLAIMER_TH = (
+    "⚠️ Disclaimer: "
+    "The information provided by this tool is for reference only "
+    "and does not constitute investment advice. "
+    "Trading involves risk; please make decisions carefully.\n\n"
+)
+
 _DISCLAIMER_MY = (
     "⚠️ Disclaimer: "
     "The information provided by this tool is for reference only "
@@ -86,6 +93,8 @@ def set_disclaimer_region(region_id: str) -> None:
         DISCLAIMER = _DISCLAIMER_JP
     elif _current_region == "sg":
         DISCLAIMER = _DISCLAIMER_SG
+    elif _current_region == "th":
+        DISCLAIMER = _DISCLAIMER_TH
     elif _current_region == "my":
         DISCLAIMER = _DISCLAIMER_MY
     elif _current_region == "uk":
